@@ -4,6 +4,7 @@ using namespace std;
 int main() {
     // Criação das variaveis
     int vida, escolha;
+    string resposta = "tempo";
     bool temTocha,temChave, temAmuleto, temEspada;
     
     //Inicialização das variaveis
@@ -75,16 +76,16 @@ int main() {
     cout << "FASE 2 - O Grande Kalessin" << endl;
     cout <<"=======================================================" << endl;
     cout << "Ao seguir seu caminho, apenas o som de seus passos" << endl;
-    cout << "rompe o silêncio que o cerca, um silêncio que parece" << endl;
-    cout << "prenunciar o caos. De repente, a caverna treme, não " << endl;
-    cout << "não só o chão, mas toda a estrutura vibra. À sua" << endl; 
+    cout << "rompe o silencio que o cerca, um silencio que parece" << endl;
+    cout << "prenunciar o caos. De repente, a caverna treme, nao " << endl;
+    cout << "so o chao, mas toda a estrutura vibra. A sua" << endl; 
     cout << "frente, uma figura alta e robusta bloqueia a passagem." << endl;
     cout <<"=======================================================" << endl;
     cout << "Com voz firme e imponente, recita seu enigma em forma" << endl;
-    cout << "de poesia, deixando claro que não há margem para erros." << endl;
+    cout << "de poesia, deixando claro que nao ha margem para erros." << endl;
     cout << "Devoro todas as coisas: aves, feras, plantas e flores. " << endl;
-    cout << "Roio o aço, mordo o ferro, e das pedras sou senhores." << endl;
-    cout << "Mato o rei, arruíno a cidade,E derrubo a montanha com " << endl;
+    cout << "Roio o aco, mordo o ferro, e das pedras sou senhores." << endl;
+    cout << "Mato o rei, arruino a cidade, E derrubo a montanha com " << endl;
     cout << "minha brevidade." << endl;
     cout << "=======================================================" << endl;
     cout << "QUEM SOU EU?" << endl;
@@ -94,5 +95,73 @@ int main() {
     cout << "[1] Atacar o Kalessin" << endl;
     cin >> escolha;
     
-    
+    // Escolha do jogador
+    if (escolha == 0) 
+    {
+        cout << "Voce decide responder o enigma, e com confianca, responde: "  << endl;
+        cin >> resposta;
+        if (resposta == "tempo")
+        {
+            cout << "O Grande Kalessin fixa seu olhar em voce por alguns segundos." << endl;
+            cout << "Em seguida, com um sorriso enigmatico, diz: 'Correto. O tempo e a resposta.'" << endl;
+            cout << "Entao, lentamente, ele abre passagem para o proximo desafio." << endl;
+        }
+        else
+        {
+            if (temAmuleto)
+            {
+                cout << "O Grande Kalessin fixa seu olhar em voce por alguns segundos." << endl;
+                cout << "Em seguida, com um sorriso enigmatico, diz: 'Errado. O tempo e a resposta.'" << endl;
+                cout << "Entao Kalessin, enfurecido, ataca você, mas graças ao amuleto que voce " << endl;
+                cout << "encontrou, consegue se proteger do ataque e escapar do confronto, sem perder muito!" << endl;
+                cout << "voce perde 50 pontos de vida." << endl;
+                vida -= 50;
+                cout << "Vida Atual: " << vida << endl;
+                }
+            else
+            {
+                cout << "O Grande Kalessin fixa seu olhar em voce por alguns segundos." << endl;
+                cout << "Em seguida, com um sorriso enigmatico, diz: 'Errado. O tempo e a resposta.'" << endl;
+                cout << "Entao Kalessin, enfurecido, ataca voce" << endl;
+                cout << "voce perde 90 pontos de vida." << endl;
+                vida -= 100;
+                cout << "Vida Atual: " << vida << endl;
+
+            }
+            
+        }
     }
+    else if (escolha == 1)
+    {
+        if (temEspada)
+        {
+            cout << "Com sua coragem e determinação, voce decide atacar o Kalessin com sua espada." << endl;
+            cout << "Apesar de sua bravura, o ataque e ineficaz contra a força do Kalessin." << endl;
+            cout << "Mas voce consegue o ferir o bastante para voce possa escapar do confronto, sem perder muito!" << endl;
+            cout << "voce perde 50 pontos de vida." << endl;
+            vida -= 50;
+            cout << "Vida Atual: " << vida << endl;
+
+        }
+        else
+        {
+            cout << "Voce decide atacar o Kalessin, mas sem uma arma adequada, seu ataque e fraco e ineficaz." << endl;
+            cout << "Kalessin, enfurecido, ataca voce" << endl;
+            cout << "voce perde 90 pontos de vida." << endl;
+            vida -= 90;
+            cout << "Vida Atual: " << vida << endl;
+
+        }
+    }
+    else
+    {
+        cout << "Escolha Invalida, tente novamente!" << endl;
+    }
+
+    if (vida <= 0)
+    {
+        cout << "O Grande Kalessin vence o confronto e voce cai derrotado." << endl;
+        cout << "Game Over!" << endl;
+        return 0;
+    }
+}
