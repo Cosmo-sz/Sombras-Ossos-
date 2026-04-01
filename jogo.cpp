@@ -189,6 +189,8 @@ int main() {
             if (temChave)
             {
                 cout << "Voce usa a chave para desativar o mecanismo e consegue abrir o bau do tesouro!" << endl;
+                 cout << "Parabens, voce encontrou o tesouro perdido e venceu o jogo!" << endl;
+
             }
             else
             {
@@ -210,8 +212,10 @@ int main() {
         cout << "Game Over!" << endl;
         return 0;
     }
-
-     cout << "Parabens, voce encontrou o tesouro perdido e venceu o jogo!" << endl;
-
+    else
+    {
+        cout << "Voce consegue escapar com vida, mas sem o tesouro." << endl;
+        cout << "Parabens por sobreviver a aventura, mas o tesouro perdido continua perdido!" << endl;
+    }
      return 0;
 }
