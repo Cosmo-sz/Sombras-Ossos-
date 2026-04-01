@@ -1,5 +1,3 @@
-#include <cctype>
-#include <string>
 # include <iostream>
 using namespace std;
 
@@ -101,8 +99,9 @@ int main() {
     if (escolha == 0) 
     {
         cout << "Voce decide responder o enigma, e com confianca, responde: "  << endl;
+        cout << "Tudo em minuscolo, pfv)" << endl;
         cin >> resposta;
-        if (normalizar(resposta) == normalizar("tempo"))
+        if (resposta == "tempo")
         {
             cout << "O Grande Kalessin fixa seu olhar em voce por alguns segundos." << endl;
             cout << "Em seguida, com um sorriso enigmatico, diz: 'Correto. O tempo e a resposta.'" << endl;
