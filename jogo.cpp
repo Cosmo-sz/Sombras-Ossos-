@@ -45,7 +45,7 @@ int main() {
 
     // fase 1
     cout << "===============================================" << endl;
-    cout << "FASE 1 - A CAVERNA" << endl;
+    cout << "                    A CAVERNA" << endl;
     cout <<"===============================================" << endl;
     cout << "Ao se aproximar da caverna, voce percebe que" << endl;
     cout << "existem 2 caminhos, um completamente escuro e" << endl;
@@ -73,7 +73,7 @@ int main() {
 
     //Fase 2
     cout << "=======================================================" << endl;
-    cout << "FASE 2 - O Grande Kalessin" << endl;
+    cout << "                   O GRANDE KALESSIN" << endl;
     cout <<"=======================================================" << endl;
     cout << "Ao seguir seu caminho, apenas o som de seus passos" << endl;
     cout << "rompe o silencio que o cerca. Um silencio que parece" << endl;
@@ -88,7 +88,7 @@ int main() {
     cout << "Mato o rei, arruino a cidade, e derrubo a montanha com " << endl;
     cout << "minha brevidade." << endl;
     cout << "=======================================================" << endl;
-    cout << "QUEM SOU EU?" << endl;
+    cout << "                    QUEM SOU EU?" << endl;
     cout << "=======================================================" << endl;
     cout << "O que voce quer fazer?" << endl;
     cout << "[0] Responder o enigma" << endl;
@@ -167,7 +167,7 @@ int main() {
 
     //Fase 3
     cout << "=======================================================" << endl;
-    cout << "FASE 3 - O Tesouro Perdido" << endl;
+    cout << "                    O TESOURO PERDIDO" << endl;
     cout << "=======================================================" << endl;
     cout << "Depois de passar pelo Kalessin e adentrar mais a fundo" << endl;
     cout << "na caverna, voce finalmente encontra o tesouro perdido." << endl;
