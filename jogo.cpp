@@ -47,7 +47,7 @@ int main() {
 
     // fase 1
     cout << "===============================================" << endl;
-    cout << "                    A CAVERNA" << endl;
+    cout << "                 A CAVERNA" << endl;
     cout <<"===============================================" << endl;
     cout << "Ao se aproximar da caverna, voce percebe que" << endl;
     cout << "existem 2 caminhos, um completamente escuro e" << endl;
