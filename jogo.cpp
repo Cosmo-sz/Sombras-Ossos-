@@ -17,8 +17,8 @@ int main() {
 
     // Criação do personagem
     cout << "=====================================" << endl;
-    cout << "        Bem Vindo Jogador!" << endl;
-    cout << "Voce esta em uma aventutura em busca" << endl;
+    cout << "        Bem-Vindo Jogador!" << endl;
+    cout << "Voce esta em uma aventura em busca" << endl;
     cout << "de um tesouro perdido, mas cuidado," << endl;
     cout << "o caminho esta cheio de perigos!" << endl;
     cout << "=====================================" << endl;
@@ -48,7 +48,7 @@ int main() {
     cout << "FASE 1 - A CAVERNA" << endl;
     cout <<"===============================================" << endl;
     cout << "Ao se aproximar da caverna, voce percebe que" << endl;
-    cout << "existem 2 caminhos, um completamente esuro e" << endl;
+    cout << "existem 2 caminhos, um completamente escuro e" << endl;
     cout << "outro iluminado por cristais incandescentes" << endl;
     cout << "Qual caminho voce escolhe?" << endl;
     cout << "[0] Caminho Escuro" << endl;
@@ -76,7 +76,7 @@ int main() {
     cout << "FASE 2 - O Grande Kalessin" << endl;
     cout <<"=======================================================" << endl;
     cout << "Ao seguir seu caminho, apenas o som de seus passos" << endl;
-    cout << "rompe o silencio que o cerca, um silencio que parece" << endl;
+    cout << "rompe o silencio que o cerca. Um silencio que parece" << endl;
     cout << "prenunciar o caos. De repente, a caverna treme, nao " << endl;
     cout << "so o chao, mas toda a estrutura vibra. A sua" << endl; 
     cout << "frente, uma figura alta e robusta bloqueia a passagem." << endl;
@@ -85,7 +85,7 @@ int main() {
     cout << "de poesia, deixando claro que nao ha margem para erros." << endl;
     cout << "Devoro todas as coisas: aves, feras, plantas e flores. " << endl;
     cout << "Roio o aco, mordo o ferro, e das pedras sou senhores." << endl;
-    cout << "Mato o rei, arruino a cidade, E derrubo a montanha com " << endl;
+    cout << "Mato o rei, arruino a cidade, e derrubo a montanha com " << endl;
     cout << "minha brevidade." << endl;
     cout << "=======================================================" << endl;
     cout << "QUEM SOU EU?" << endl;
@@ -124,7 +124,7 @@ int main() {
                 cout << "Em seguida, com um sorriso enigmatico, diz: 'Errado. O tempo e a resposta.'" << endl;
                 cout << "Entao Kalessin, enfurecido, ataca voce" << endl;
                 cout << "voce perde 90 pontos de vida." << endl;
-                vida -= 100;
+                vida -= 90;
                 cout << "Vida Atual: " << vida << endl;
 
             }
