@@ -1,3 +1,5 @@
+#include <cctype>
+#include <string>
 # include <iostream>
 using namespace std;
 
@@ -100,7 +102,7 @@ int main() {
     {
         cout << "Voce decide responder o enigma, e com confianca, responde: "  << endl;
         cin >> resposta;
-        if (resposta == "tempo")
+        if (normalizar(resposta) == normalizar("tempo"))
         {
             cout << "O Grande Kalessin fixa seu olhar em voce por alguns segundos." << endl;
             cout << "Em seguida, com um sorriso enigmatico, diz: 'Correto. O tempo e a resposta.'" << endl;
