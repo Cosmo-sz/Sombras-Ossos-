@@ -164,4 +164,54 @@ int main() {
         cout << "Game Over!" << endl;
         return 0;
     }
+
+    //Fase 3
+    cout << "=======================================================" << endl;
+    cout << "FASE 3 - O Tesouro Perdido" << endl;
+    cout << "=======================================================" << endl;
+    cout << "Depois de passar pelo Kalessin e adentrar mais a fundo" << endl;
+    cout << "na caverna, voce finalmente encontra o tesouro perdido." << endl;
+    cout << "O bau do tesouro se encontra no meio da sala, protegido" << endl;
+    cout << "por um mecanismo complexo, que parece ser ativado por" << endl;
+    cout << "uma chave. O que voce faz?" << endl;
+    cout << "[0] Tentar pegar o bau sem a chave" << endl;
+    cout << "[1] Usar a chave para desativar o mecanismo" << endl;
+    cin >> escolha;
+    switch (escolha)
+    {
+        case 0:
+            cout << "Voce tenta pegar o bau sem a chave, " << endl;
+            cout << "mas o mecanismo e ativado, e uma armadilha e acionada!" << endl;
+            cout << "Voce perde 50 pontos de vida." << endl;
+            vida -= 50;
+            break;
+        case 1:
+            if (temChave)
+            {
+                cout << "Voce usa a chave para desativar o mecanismo e consegue abrir o bau do tesouro!" << endl;
+            }
+            else
+            {
+                cout << "Voce tenta usar a chave para desativar o mecanismo, mas percebe que nao tem a chave!" << endl;
+                cout << "O mecanismo e ativado, e uma armadilha e acionada!" << endl;
+                cout << "Voce perde 50 pontos de vida." << endl;
+                vida -= 50;
+            }
+            break;
+        default:
+            cout << "Escolha Invalida, tente novamente!" << endl;
+            break;
+    
+    }
+    cout << "Vida Atual: " << vida << endl;
+    if (vida <= 0)
+    {
+        cout << "Voce nao conseguiu sobreviver as armadilhas do tesouro e cai derrotado." << endl;
+        cout << "Game Over!" << endl;
+        return 0;
+    }
+
+     cout << "Parabens, voce encontrou o tesouro perdido e venceu o jogo!" << endl;
+
+     return 0;
 }
